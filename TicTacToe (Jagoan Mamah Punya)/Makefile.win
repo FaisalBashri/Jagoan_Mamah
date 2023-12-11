@@ -1,0 +1,106 @@
+# Project: TicTacToe
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o showMenu.o selectMenu.o showDimention.o selectDimention.o showMode.o selectMode.o showLvl.o selectLvl.o logic3.o showResult.o scoreLogic.o selectMatch3.o selectResult.o showBoard_3.o showBoard_5.o selectMatch5.o logic5.o selectMatch7.o showBoard_7.o logic7.o naming.o showBoardCom_3.o count.o showBoardCom_5.o showBoardCom_7.o saving.o
+LINKOBJ  = main.o showMenu.o selectMenu.o showDimention.o selectDimention.o showMode.o selectMode.o showLvl.o selectLvl.o logic3.o showResult.o scoreLogic.o selectMatch3.o selectResult.o showBoard_3.o showBoard_5.o selectMatch5.o logic5.o selectMatch7.o showBoard_7.o logic7.o naming.o showBoardCom_3.o count.o showBoardCom_5.o showBoardCom_7.o saving.o
+LIBS     = -L"C:/Users/LENOVO/Dev-Cpp/MinGW64/lib" -L"C:/Users/LENOVO/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Users/LENOVO/Dev-Cpp/MinGW64/include" -I"C:/Users/LENOVO/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/LENOVO/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Users/LENOVO/Dev-Cpp/MinGW64/include" -I"C:/Users/LENOVO/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/LENOVO/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/LENOVO/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = TicTacToe(TuBes).exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+showMenu.o: showMenu.cpp
+	$(CPP) -c showMenu.cpp -o showMenu.o $(CXXFLAGS)
+
+selectMenu.o: selectMenu.cpp
+	$(CPP) -c selectMenu.cpp -o selectMenu.o $(CXXFLAGS)
+
+showDimention.o: showDimention.cpp
+	$(CPP) -c showDimention.cpp -o showDimention.o $(CXXFLAGS)
+
+selectDimention.o: selectDimention.cpp
+	$(CPP) -c selectDimention.cpp -o selectDimention.o $(CXXFLAGS)
+
+showMode.o: showMode.cpp
+	$(CPP) -c showMode.cpp -o showMode.o $(CXXFLAGS)
+
+selectMode.o: selectMode.cpp
+	$(CPP) -c selectMode.cpp -o selectMode.o $(CXXFLAGS)
+
+showLvl.o: showLvl.cpp
+	$(CPP) -c showLvl.cpp -o showLvl.o $(CXXFLAGS)
+
+selectLvl.o: selectLvl.cpp
+	$(CPP) -c selectLvl.cpp -o selectLvl.o $(CXXFLAGS)
+
+logic3.o: logic3.cpp
+	$(CPP) -c logic3.cpp -o logic3.o $(CXXFLAGS)
+
+showResult.o: showResult.cpp
+	$(CPP) -c showResult.cpp -o showResult.o $(CXXFLAGS)
+
+scoreLogic.o: scoreLogic.cpp
+	$(CPP) -c scoreLogic.cpp -o scoreLogic.o $(CXXFLAGS)
+
+selectMatch3.o: selectMatch3.cpp
+	$(CPP) -c selectMatch3.cpp -o selectMatch3.o $(CXXFLAGS)
+
+selectResult.o: selectResult.cpp
+	$(CPP) -c selectResult.cpp -o selectResult.o $(CXXFLAGS)
+
+showBoard_3.o: showBoard_3.cpp
+	$(CPP) -c showBoard_3.cpp -o showBoard_3.o $(CXXFLAGS)
+
+showBoard_5.o: showBoard_5.cpp
+	$(CPP) -c showBoard_5.cpp -o showBoard_5.o $(CXXFLAGS)
+
+selectMatch5.o: selectMatch5.cpp
+	$(CPP) -c selectMatch5.cpp -o selectMatch5.o $(CXXFLAGS)
+
+logic5.o: logic5.cpp
+	$(CPP) -c logic5.cpp -o logic5.o $(CXXFLAGS)
+
+selectMatch7.o: selectMatch7.cpp
+	$(CPP) -c selectMatch7.cpp -o selectMatch7.o $(CXXFLAGS)
+
+showBoard_7.o: showBoard_7.cpp
+	$(CPP) -c showBoard_7.cpp -o showBoard_7.o $(CXXFLAGS)
+
+logic7.o: logic7.cpp
+	$(CPP) -c logic7.cpp -o logic7.o $(CXXFLAGS)
+
+naming.o: naming.cpp
+	$(CPP) -c naming.cpp -o naming.o $(CXXFLAGS)
+
+showBoardCom_3.o: showBoardCom_3.cpp
+	$(CPP) -c showBoardCom_3.cpp -o showBoardCom_3.o $(CXXFLAGS)
+
+count.o: count.cpp
+	$(CPP) -c count.cpp -o count.o $(CXXFLAGS)
+
+showBoardCom_5.o: showBoardCom_5.cpp
+	$(CPP) -c showBoardCom_5.cpp -o showBoardCom_5.o $(CXXFLAGS)
+
+showBoardCom_7.o: showBoardCom_7.cpp
+	$(CPP) -c showBoardCom_7.cpp -o showBoardCom_7.o $(CXXFLAGS)
+
+saving.o: saving.cpp
+	$(CPP) -c saving.cpp -o saving.o $(CXXFLAGS)
